@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-webhooks-2
+spec:
+  destination:
+    name: ''
+    namespace: ''
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: valid
+    repoURL: 'https://github.com/ikaliuzh/argo-cd-test.git'
+    targetRevision: HEAD
+  project: default

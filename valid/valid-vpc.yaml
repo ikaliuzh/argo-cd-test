@@ -3,6 +3,8 @@ kind: VPC
 metadata:
   name: valid-vpc
   namespace: cluster-manager
+  annotations:
+    "sfcn.cisco.com/spoof": "true"
 spec:
   account: "329599101318"
   region: us-east-1

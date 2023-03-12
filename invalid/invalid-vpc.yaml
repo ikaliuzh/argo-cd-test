@@ -1,8 +1,10 @@
 apiVersion: sfcn.cisco.com/v1
 kind: VPC
 metadata:
-  name: valid-vpc
+  name: invalid-vpc
   namespace: some-invalid-namespace
+  annotations:
+    "sfcn.cisco.com/spoof": "true"
 spec:
   account: "329599101318"
   region: us-east-1

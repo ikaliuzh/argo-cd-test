@@ -1,0 +1,12 @@
+apiVersion: sfcn.cisco.com/v1
+kind: VPC
+metadata:
+  name: valid-vpc
+  namespace: cluster-manager
+spec:
+  account: "329599101318"
+  region: us-east-1
+  defaultCidr: 172.16.0.0/16
+  maxAZs: 2
+  tags:
+    env: dev
